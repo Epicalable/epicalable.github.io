@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="image.css">
@@ -86,6 +87,34 @@
                 <p><i class="fa fa-fw fa-map-marker"></i>Singapore</p>
                 <p><i class="fa fa-fw fa-envelope"></i>epicalableindustries@gmail.com</p>
         </section>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+        </script>
+
     </body>
 
 </html>
