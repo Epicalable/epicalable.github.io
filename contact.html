@@ -2,21 +2,76 @@
 <html>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="image.css">
 
     <head>
-        <meta charset="utf-8">
-        <title>Contacts</title>
+        <title>Epicalable</title>
+        <meta charset="UTF-8">
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
         <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
-        <link rel="stylesheet" href="image.css">
         <style>
-            img {
-               display: block;
-               margin-left: auto;
-               margin-right: auto;
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Raleway", sans-serif
+            }
+    
+            body,
+            html {
+                height: 100%;
+                line-height: 1.8;
+            }
+    
+            /* Full height image header */
+            .bgimg-1 {
+                background-position: center;
+                background-size: cover;
+                background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+                min-height: 100%;
+            }
+    
+            .w3-bar .w3-button {
+                padding: 16px;
             }
         </style>
     </head>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card" id="myNavbar">
+            <a href="https://epicalable.github.io/epicalable.html" class="w3-bar-item w3-button w3-wide">EPICALABLE</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="epicabout.html" class="w3-bar-item w3-button">ABOUT US</a>
+                <a href="https://github.com/orgs/Epicalable/people" class="w3-bar-item w3-button"><i class="fa fa-user"></i>
+                    TEAM</a>
+                <a href="https://github.com/Epicalable" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GITHUB
+                    REPOS</a>
+                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="epicabout.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="https://github.com/orgs/Epicalable/people" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="https://github.com/Epicalable" onclick="w3_close()" class="w3-bar-item w3-button">GITHUB REPOS</a>
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+    </nav>
 
     <body>
         <!-- Navigation -->
@@ -28,9 +83,8 @@
         <section class="w3-row-padding w3-center w3-light-grey">
             <h2 class="w3-wide">EPICALABLE</h2>
             <h3 class="w3-wide">Contact Us</h2>
-                <p>
-                    Email:m.mahadhevha@gmail.com
-                </p>
+                <p><i class="fa fa-fw fa-map-marker"></i>Singapore</p>
+                <p><i class="fa fa-fw fa-envelope"></i>epicalableindustries@gmail.com</p>
         </section>
     </body>
 
