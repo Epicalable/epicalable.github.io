@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Organisation Page References -->
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/image.css">
+
+<head>
+    <title>Our Team-Epicalable</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body width="device-width">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card" id="myNavbar">
+            <a href="https://epicalable.github.io/epicalable.html" class="w3-bar-item w3-button w3-wide">EPICALABLE</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="epicabout.html" class="w3-bar-item w3-button">ABOUT US</a>
+                <a href="epicteam.html" class="w3-bar-item w3-button"><i
+                        class="fa fa-user"></i> TEAM</a>
+                <a href="https://github.com/Epicalable" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GITHUB
+                    REPOS</a>
+                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="https://epicalable.github.io/epicalable.html" onclick="w3_close()"
+            class="w3-bar-item w3-button">HOME</a>
+        <a href="epicabout.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="epicteam.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="https://github.com/Epicalable" onclick="w3_close()" class="w3-bar-item w3-button">GITHUB REPOS</a>
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+    </nav>
+
+
+    <!-- Organisation Teams -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">xxxxxxxxxxxxxxxx</h2>
+        <h2 class="w3-wide">OUR TEAMS</h2>
+        
+        <h4 style="color:#000000;">Our Administration Department</h4>
+            <p class="w3-justify">
+                The Administration Department helps oversee the startups day to day operations and functions such as managing our member's workloads, 
+                helping out with product testing, final code reviews before committing to github, managing the organisation's project flow and company-public relations.
+            </p>
+
+        <h4 style="color:#000000;">Our Coding Department</h2>
+            <p class="w3-justify">
+                The Coding Department is the powerhouse of this organisation, here is where programmers help out with coding and error analysis before sending it for 
+                product-testing and code reviews. Programmers in this department mainly help out with writing code and helping out with issues and error fixing.
+            </p>
+
+        <h4 style="color:#000000;">Our Research and Development Departmentt</h2>
+            <p class="w3-justify">
+                Programmers in the R&D department are the engineers of our products as they help out with developing and engineering algorithms before being implemented in
+                our products. Usually programmers here develope and research on concepts and algorithms for better code implementation.
+            </p>
+    </section>
+
+    <!-- Organisation Worm logo -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <h2 class="w3-wide"> EPICALABLE</h2>
+    </section>
+
+    <!-- Organisation Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="https://www.youtube.com/channel/UC8SKvijclXK7ki4DjCUdi2w"><i class="fa fa-youtube"></i></a>
+        <a href="https://github.com/Epicalable"><i class="fa fa-github"></i></a>
+        <p class="w3-medium">
+            Designed by <a href="https://github.com/Epicalable" target="_blank">Epicalable</a>
+            <br>(C) Epicalable 2022
+        </p>
+    </footer>
+
+    <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+    </script>
+
+</body>
+
+</html>
