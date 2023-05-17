@@ -5,7 +5,7 @@ Link to our website: https://epicalable.github.io/epicalable.html
 
 # WHAT'S NEW?
 ```
-1. Refreshed look with new images and spelling fixes.
+1. Minor Changes
 2. Updated README.md
 
 Code Checks Manifest:-
@@ -16,6 +16,6 @@ Front-End Stability Checks: ✅
 Code-Frontend Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 11-May-2023 16:24 HRS
+Last Updated: 17-May-2023 16:15 HRS
 Publisher: Epicalable
 ```
