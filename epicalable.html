@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/Googlefonts.css">
+    <link rel="stylesheet" href="./scripts/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <head>
         <title>Epicalable</title>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./scripts/images/favicon.png">
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
         <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
         <style>
@@ -21,15 +21,20 @@
                 line-height: 1.8;
                 }
 
+            img.test {
+                width: 100%;
+                height: auto;
+                }
+
             /* Full height image header */
             .bgimg-1 {
                 background-position: center;
                 background-size: cover;
-                background-image: url("images/laptop.jpg");
+                background-image: url("./scripts/images/laptop.jpg");
                 min-height: 100%;
                 }
 
-            .w3-bar .w3-button {
+            .epic-bar .epic-button {
                 padding: 16px;
                 }
         </style>
@@ -37,86 +42,87 @@
 
     <body>
         <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-            <div class="w3-bar w3-black w3-card" id="myNavbar">
-                <a href="https://epicalable.github.io/epicalable.html" class="w3-bar-item w3-button w3-wide">EPICALABLE</a>
+        <div class="epic-top">
+            <div class="epic-bar epic-black epic-card" id="myNavbar">
+                <a href="https://epicalable.github.io/epicalable.html" class="epic-bar-item epic-button epic-wide">EPICALABLE</a>
                 <!-- Right-sided navbar links -->
-                <div class="w3-right w3-hide-small">
-                    <a href="epicabout.html" class="w3-bar-item w3-button">ABOUT US</a>
-                    <a href="epicteam.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-                    <a href="https://github.com/Epicalable" class="w3-bar-item w3-button"><i class="fa fa-th"></i> OUR PROJECTS</a>
-                    <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+                <div class="epic-right epic-hide-small">
+                    <a href="./scripts/epicabout.html" class="epic-bar-item epic-button">ABOUT US</a>
+                    <a href="./scripts/epicteam.html" class="epic-bar-item epic-button"><i class="fa fa-user"></i> TEAM</a>
+                    <a href="https://github.com/Epicalable" class="epic-bar-item epic-button"><i class="fa fa-th"></i> OUR PROJECTS</a>
+                    <a href="./scripts/contact.html" class="epic-bar-item epic-button"><i class="fa fa-envelope"></i> CONTACT US</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                onclick="w3_open()">
+                <a href="javascript:void(0)" class="epic-bar-item epic-button epic-right epic-hide-large epic-hide-medium"
+                onclick="epic_open()">
                 <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
 
         <!-- Sidebar on small screens when clicking the menu icon -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        <nav class="epic-sidebar epic-bar-block epic-black epic-card epic-animate-left epic-hide-medium epic-hide-large"
             style="display:none" id="mySidebar">
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            <a href="javascript:void(0)" onclick="epic_close()" class="epic-bar-item epic-button epic-large epic-padding-16">Close
                 ×</a>
-            <a href="https://epicalable.github.io/epicalable.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-            <a href="epicabout.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
-            <a href="epicteam.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-            <a href="https://github.com/Epicalable" onclick="w3_close()" class="w3-bar-item w3-button">OUR PROJECTS</a>
-            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+            <a href="https://epicalable.github.io/epicalable.html" onclick="epic_close()" class="epic-bar-item epic-button">HOME</a>
+            <a href="./scripts/epicabout.html" onclick="epic_close()" class="epic-bar-item epic-button">ABOUT US</a>
+            <a href="./scripts/epicteam.html" onclick="epic_close()" class="epic-bar-item epic-button">TEAM</a>
+            <a href="https://github.com/Epicalable" onclick="epic_close()" class="epic-bar-item epic-button">OUR PROJECTS</a>
+            <a href="./scripts/contact.html" onclick="epic_close()" class="epic-bar-item epic-button">CONTACT US</a>
         </nav>
 
         <!-- Header with full-height image -->
-        <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-            <div class="w3-display-left w3-text-white" style="padding:48px">
-                <span class="w3-jumbo w3-hide-small">Lets start some impact with coding :-)</span><br>
-                <span class="w3-xxlarge w3-hide-large w3-hide-medium">Lets start some impact with coding</span><br>
-                <span class="w3-large">Lets try solving problems and make our lives easier using Open-Source Coding.</span>
-                <p><a href="epicabout.html"
-                    class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn
+        <header class="bgimg-1 epic-display-container epic-grayscale-min" id="home">
+            <div class="epic-display-left epic-text-white" style="padding:48px">
+                <span class="epic-jumbo epic-hide-small">Lets start some impact with coding :-)</span><br>
+                <span class="epic-xxlarge epic-hide-large epic-hide-medium">Lets start some impact with coding</span><br>
+                <span class="epic-large">Lets try solving problems and make our lives easier using Open-Source Coding.</span>
+                <p><a href="./scripts/epicabout.html"
+                    class="epic-button epic-white epic-padding-large epic-large epic-margin-top epic-opacity epic-hover-opacity-off">Learn
                     more about us >>></a></p>
             </div>
-            <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <div class="epic-display-bottomleft epic-text-grey epic-large" style="padding:24px 48px">
                 <a href="https://www.youtube.com/@Epicalable_Industries"><i class="fa fa-youtube"></i></a>
                 <a href="https://github.com/Epicalable"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/_Epicalable_"><i class="fa fa-twitter"></i></a>
             </div>
         </header>
 
         <!-- About Section -->
-        <div class="w3-container" style="padding:128px 16px" id="about">
-            <h3 class="w3-center">ABOUT EPICALABLE</h3>
-            <p class="w3-center w3-large">Key features of our Singapore Based Startup</p>
-            <div class="w3-row-padding w3-center" style="margin-top:64px">
-                <div class="w3-quarter">
-                    <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-                    <p class="w3-large">Responsive</p>
+        <div class="epic-container" style="padding:128px 16px" id="about">
+            <h3 class="epic-center">ABOUT EPICALABLE</h3>
+            <p class="epic-center epic-large">Key features of our Singapore Based Startup</p>
+            <div class="epic-row-padding epic-center" style="margin-top:64px">
+                <div class="epic-quarter">
+                    <i class="fa fa-desktop epic-margin-bottom epic-jumbo epic-center"></i>
+                    <p class="epic-large">Responsive</p>
                     <p>Our startup is quick to respond to any customer problems, queries or requests regarding our products or about our Organisation.</p>
                 </div>
-                <div class="w3-quarter">
-                    <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Passion</p>
+                <div class="epic-quarter">
+                    <i class="fa fa-heart epic-margin-bottom epic-jumbo"></i>
+                    <p class="epic-large">Passion</p>
                     <p>We love Open-Source projects as we believe it can bring trust and transparency of our products to our customers.</p>
                 </div>
-                <div class="w3-quarter">
-                    <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Design</p>
+                <div class="epic-quarter">
+                    <i class="fa fa-diamond epic-margin-bottom epic-jumbo"></i>
+                    <p class="epic-large">Design</p>
                     <p>We take an extra step to make designs in our products for more sleek, vibrant, modern and more understandable for our users.</p>
                 </div>
-                <div class="w3-quarter">
-                    <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Support</p>
+                <div class="epic-quarter">
+                    <i class="fa fa-cog epic-margin-bottom epic-jumbo"></i>
+                    <p class="epic-large">Support</p>
                     <p>We have a 24/7 support centre for issue reporting and resolving or doubt clarifications over at github.</p>
                 </div>
             </div>
         </div>
 
         <!-- Promo Section - "We know design" -->
-        <div class="w3-container w3-light-grey" style="padding:128px 16px">
-            <div class="w3-row-padding">
-                <div class="w3-col m6">
-                    <h3>We know design</h3>
+        <div class="epic-container epic-light-grey" style="padding:128px 16px">
+            <div class="epic-row-padding">
+                <div class="epic-col m6">
+                    <h3>We Know Design</h3>
                     <p>Our startup aims to make our apps more vibrant, sustainable and efficient.
                         <br>These days whenever a product is being created, developers need to not only think about the backend code but 
                         also now need to think about integrating the backend code to the frontend UI/UX buttons and funtions so that the users 
@@ -125,10 +131,10 @@
                         design helps us to easily identify and correct issues as it helps us to quickly locate sections of unstable code using 
                         visual cues typically found in our documentations and codes.
                     </p>
-                    <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> View Our Works</a></p>
+                    <p><a href="https://epicrd.github.io/RDdept.html" class="epic-button epic-black"><i class="fa fa-th"></i> View Our R&D Website</a></p>
                 </div>
-                <div class="w3-col m6">
-                    <img class="w3-image w3-round-large" src="images/design.jpg"
+                <div class="epic-col m6">
+                    <img class="epic-image epic-round-large" src="./scripts/images/design.jpg"
                         alt="Coding" width="640" height="300">
                 </div>
             </div>
@@ -136,29 +142,29 @@
 
 
         <!-- Promo Section "Statistics" -->
-        <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-            <div class="w3-quarter">
-                <span class="w3-xxlarge">3+</span>
+        <div class="epic-container epic-row epic-center epic-dark-grey epic-padding-64">
+            <div class="epic-quarter">
+                <span class="epic-xxlarge">3+</span>
                 <br>Team Partners
             </div>
-            <div class="w3-quarter">
-                <span class="w3-xxlarge">5+</span>
+            <div class="epic-quarter">
+                <span class="epic-xxlarge">5+</span>
                 <br>Projects Done So Far
             </div>
-            <div class="w3-quarter">
-                <span class="w3-xxlarge">60+</span>
+            <div class="epic-quarter">
+                <span class="epic-xxlarge">60+</span>
                 <br>Happy Satisfied Clients
             </div>
-            <div class="w3-quarter">
-                <span class="w3-xxlarge">20+</span>
+            <div class="epic-quarter">
+                <span class="epic-xxlarge">20+</span>
                 <br>Organisation Meetings
             </div>
         </div>
 
         <!-- Work Section -->
-        <div class="w3-container w3-black" style="padding:128px 16px" id="work">
-            <h3 class="w3-center">OUR WORK</h3>
-            <p class="w3-center w3-large">What Our organisation has done so far</p>
+        <div class="epic-container epic-black" style="padding:128px 16px" id="work">
+            <h3 class="epic-center">OUR PROJECTS</h3>
+            <p class="epic-center epic-large">What Our organisation has done so far</p>
                 <p>
                     Our Organisation uses Visual Studios Code to code and Git for version control for most of our projects and endeavours. While we want 
                     to create successful products we would need to start somewhere to show the world that we are capable of creating, testing and deploying 
@@ -170,59 +176,52 @@
                     Started in 2020 this Chatbot built using python is capable of chatting and retrieving information, daily news and other data from the internet for it's user. 
                     It's bundled with a sleek FrontEnd for better User Experience (UX) currently being hosted and stored in github. This project is our First Flagship Project and has 
                     gotten 60 stars on github (at the time of writing this) so far.<br>
-                    <img class="w3-image w3-round-large" src="images/jarvisui.png" alt="Coding" width="350" height="400">
+                    <img class="epic-image epic-round-large" src="./scripts/images/jarvisui.png" alt="Coding" width="350" height="400">
                 </p>
                 <p>
                     <a style="color: #ffffff;" href="https://github.com/Epicalable/ComDash">ComDash</a><br>
                     Announced in 2022 as Epicalable's most ambitious project after Jarvis, ComDash is an All-in-one Web-based Dashboard for News, Weathers and some more 
                     cool features coming soon. This project is our first time working with JavaScript, It's current emphasis is on utilizing coding to create aesthetic web-based dashboards
                     for a greater UX.<br>
-                    <img class="w3-image w3-round-large" src="images/comdashui.png" width="350" height="400">
+                    <img class="epic-image epic-round-large" src="./scripts/images/comdashui.png" width="350" height="400">
                 </p>
                 Stay tuned to the latest updates by 'starring' and 'watching' the repositories over at GitHub.
             </p>
         </div>
 
-        <!-- Skills Section -->
-        <div class="w3-container w3-light-grey w3-padding-64">
-            <div class="w3-row-padding">
-                <div class="w3-col m6">
-                    <h3>Our Skills</h3>
-                    <p>With a good track record so far, Epicalable is mainly forcused on backend programming with Python, C++ and
-                        also frontend web developement using Html and Css and with current plans to also integrate Java and Sql into our projects.</p>
-                    <p>Epicalable also has Skills in video editing and making videos for our youtube channel.</p>
+        <!-- Promo Section - "Video Editing" -->
+        <div class="epic-container epic-light-grey" style="padding:128px 16px">
+            <div class="epic-row-padding">
+                <div class="epic-col m6">
+                    <img class="epic-image epic-round-large" src="./scripts/images/videoediting.jpg" alt="VideoEditing" width="640" height="300">
                 </div>
-                <div class="w3-col m6">
-                    <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Programming</p>
-                    <div class="w3-grey">
-                        <div class="w3-container w3-dark-grey w3-center" style="width:65%">70%</div>
-                    </div>
-                    <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-                    <div class="w3-grey">
-                       <div class="w3-container w3-dark-grey w3-center" style="width:25%">20%</div>
-                    </div>
-                    <p class="w3-wide"><i class="fa fa-laptop w3-margin-right"></i>Video Editing</p>
-                    <div class="w3-grey">
-                        <div class="w3-container w3-dark-grey w3-center" style="width:10%">10%</div>
-                    </div>
+                <div class="epic-col m6">
+                    <h3>Our Video Editing Team</h3>
+                    <p>These days whenever a product is being created, developers need to not only think about the backend or 
+                       frontend code but also now need to think about how to promote and advertise our product. Which is why we have 
+                       a dedicated department to create videos and promotional content using premium softwares which will help our 
+                       projects find it's targeted audience.
+                    </p>
+                    <p><a href="https://www.youtube.com/@Epicalable_Industries" class="epic-button epic-black"><i class="fa fa-th"></i> View Our Youtube Channel</a></p>
                 </div>
             </div>
         </div>
 
         <!-- Organisation Worm logo -->
-        <section class="w3-row-padding w3-center w3-light-grey">
-            <h2 class="w3-wide">   EPICALABLE</h2>
+        <section class="epic-row-padding epic-center epic-light-grey">
+            <h2 class="epic-wide">   EPICALABLE</h2>
         </section>
 
-        <section class="w3-row-padding w3-center w3-light-grey">
-            <a style="color: #000000;" href="contact.html">Contact Us</a>
+        <section class="epic-row-padding epic-center epic-light-grey">
+            <a style="color: #000000;" href="./scripts/contact.html">Contact Us</a>
         </section>
 
         <!-- Organisation Footer -->
-        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <footer class="epic-container epic-padding-64 epic-center epic-black epic-xlarge">
             <a href="https://www.youtube.com/@Epicalable_Industries"><i class="fa fa-youtube"></i></a>
             <a href="https://github.com/Epicalable"><i class="fa fa-github"></i></a>
-            <p class="w3-medium">
+            <a href="https://twitter.com/_Epicalable_"><i class="fa fa-twitter"></i></a>
+            <p class="epic-medium">
                 Designed by <a href="https://github.com/Epicalable" target="_blank">Epicalable</a>
                 <br>(C) Epicalable 2023
             </p>
@@ -241,7 +240,7 @@
             // Toggle between showing and hiding the sidebar when clicking the menu icon
             var mySidebar = document.getElementById("mySidebar");
 
-            function w3_open() {
+            function epic_open() {
                 if (mySidebar.style.display === 'block') {
                     mySidebar.style.display = 'none';
                 } else {
@@ -250,7 +249,7 @@
             }
 
             // Close the sidebar with the close button
-            function w3_close() {
+            function epic_close() {
                 mySidebar.style.display = "none";
             }
         </script>

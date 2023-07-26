@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <head>
+        <title>Contact Us-Epicalable</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
+        <style>
+            body, h1, h2, h3, h4, h5, h6 {
+                font-family: "Raleway", sans-serif
+                }
+    
+            body,
+            html {
+                height: 100%;
+                line-height: 1.8;
+                }
+
+            img.test {
+                width: 100%;
+                height: auto;
+                }
+    
+            .epic-bar .epic-button {
+                padding: 16px;
+                }
+        </style>
+    </head>
+
+    <!-- Navbar (sit on top) -->
+    <div class="epic-top">
+        <div class="epic-bar epic-black epic-card" id="myNavbar">
+            <a href="https://epicalable.github.io/epicalable.html" class="epic-bar-item epic-button epic-wide">EPICALABLE</a>
+            <!-- Right-sided navbar links -->
+            <div class="epic-right epic-hide-small">
+                <a href="./epicabout.html" class="epic-bar-item epic-button">ABOUT US</a>
+                <a href="./epicteam.html" class="epic-bar-item epic-button"><i class="fa fa-user"></i> TEAM</a>
+                <a href="https://github.com/Epicalable" class="epic-bar-item epic-button"><i class="fa fa-th"></i> OUR PROJECTS</a>
+                <a href="./contact.html" class="epic-bar-item epic-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+            <a href="javascript:void(0)" class="epic-bar-item epic-button epic-right epic-hide-large epic-hide-medium"
+                onclick="epic_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="epic-sidebar epic-bar-block epic-black epic-card epic-animate-left epic-hide-medium epic-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="epic_close()"
+            class="epic-bar-item epic-button epic-large epic-padding-16">Close
+            ×</a>
+        <a href="https://epicalable.github.io/epicalable.html" onclick="epic_close()"
+            class="epic-bar-item epic-button">HOME</a>
+        <a href="./epicabout.html" onclick="epic_close()" class="epic-bar-item epic-button">ABOUT US</a>
+        <a href="./epicteam.html" onclick="epic_close()" class="epic-bar-item epic-button">TEAM</a>
+        <a href="https://github.com/Epicalable" onclick="epic_close()" class="epic-bar-item epic-button">OUR PROJECTS</a>
+        <a href="./contact.html" onclick="epic_close()" class="epic-bar-item epic-button">CONTACT US</a>
+    </nav>
+
+    <body>
+        <section class="epic-row-padding epic-center epic-light-grey">
+            <br>
+            <br>
+            <h2 class="epic-wide">EPICALABLE</h2>
+            <h3 class="epic-wide">Contact Our Startup</h3>
+                <p><a href="https://www.google.com.sg/maps/@1.3437459,103.8240449,11z"><i class="fa fa-fw fa-map-marker"></i>Singapore</a></p>
+                <p><a href="https://twitter.com/_Epicalable_"><i class="fa fa-fw fa-twitter"></i>_Epicalable_</a></p>
+                <p><a href="https://www.google.com/intl/en-GB/gmail/about/#"><i class="fa fa-fw fa-envelope"></i>epicalableindustries@gmail.com</a></p>
+                <img class="epic-image epic-round-large" src="./images/contact.jpg" alt="contactus" width="600">
+        </section>
+
+
+
+
+        <!-- Organisation Footer -->
+        <footer class="epic-container epic-padding-64 epic-center epic-black epic-xlarge">
+            <a href="https://www.youtube.com/@Epicalable_Industries"><i class="fa fa-youtube"></i></a>
+            <a href="https://github.com/Epicalable"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/_Epicalable_"><i class="fa fa-twitter"></i></a>
+            <p class="epic-medium">
+                Designed by <a href="https://github.com/Epicalable" target="_blank">Epicalable</a>
+                <br>(C) Epicalable 2023
+            </p>
+        </footer>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function epic_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function epic_close() {
+                mySidebar.style.display = "none";
+            }
+        </script>
+
+    </body>
+
+</html>

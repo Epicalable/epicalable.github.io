@@ -1,0 +1,235 @@
+/* epic.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.epic-serif{font-family:serif}.epic-sans-serif{font-family:sans-serif}.epic-cursive{font-family:cursive}.epic-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.epic-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.epic-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.epic-table,.epic-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.epic-table-all{border:1px solid #ccc}
+.epic-bordered tr,.epic-table-all tr{border-bottom:1px solid #ddd}.epic-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.epic-table-all tr:nth-child(odd){background-color:#fff}.epic-table-all tr:nth-child(even){background-color:#f1f1f1}
+.epic-hoverable tbody tr:hover,.epic-ul.epic-hoverable li:hover{background-color:#ccc}.epic-centered tr th,.epic-centered tr td{text-align:center}
+.epic-table td,.epic-table th,.epic-table-all td,.epic-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.epic-table th:first-child,.epic-table td:first-child,.epic-table-all th:first-child,.epic-table-all td:first-child{padding-left:16px}
+.epic-btn,.epic-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.epic-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.epic-btn,.epic-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.epic-disabled,.epic-btn:disabled,.epic-button:disabled{cursor:not-allowed;opacity:0.3}.epic-disabled *,:disabled *{pointer-events:none}
+.epic-btn.epic-disabled:hover,.epic-btn:disabled:hover{box-shadow:none}
+.epic-badge,.epic-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.epic-badge{border-radius:50%}
+.epic-ul{list-style-type:none;padding:0;margin:0}.epic-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.epic-ul li:last-child{border-bottom:none}
+.epic-tooltip,.epic-display-container{position:relative}.epic-tooltip .epic-text{display:none}.epic-tooltip:hover .epic-text{display:inline-block}
+.epic-ripple:active{opacity:0.5}.epic-ripple{transition:opacity 0s}
+.epic-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.epic-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.epic-dropdown-click,.epic-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.epic-dropdown-hover:hover .epic-dropdown-content{display:block}
+.epic-dropdown-hover:first-child,.epic-dropdown-click:hover{background-color:#ccc;color:#000}
+.epic-dropdown-hover:hover > .epic-button:first-child,.epic-dropdown-click:hover > .epic-button:first-child{background-color:#ccc;color:#000}
+.epic-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.epic-check,.epic-radio{width:24px;height:24px;position:relative;top:6px}
+.epic-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.epic-bar-block .epic-dropdown-hover,.epic-bar-block .epic-dropdown-click{width:100%}
+.epic-bar-block .epic-dropdown-hover .epic-dropdown-content,.epic-bar-block .epic-dropdown-click .epic-dropdown-content{min-width:100%}
+.epic-bar-block .epic-dropdown-hover .epic-button,.epic-bar-block .epic-dropdown-click .epic-button{width:100%;text-align:left;padding:8px 16px}
+.epic-main,#main{transition:margin-left .4s}
+.epic-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.epic-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.epic-bar{width:100%;overflow:hidden}.epic-center .epic-bar{display:inline-block;width:auto}
+.epic-bar .epic-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.epic-bar .epic-dropdown-hover,.epic-bar .epic-dropdown-click{position:static;float:left}
+.epic-bar .epic-button{white-space:normal}
+.epic-bar-block .epic-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.epic-bar-block.epic-center .epic-bar-item{text-align:center}.epic-block{display:block;width:100%}
+.epic-responsive{display:block;overflow-x:auto}
+.epic-container:after,.epic-container:before,.epic-panel:after,.epic-panel:before,.epic-row:after,.epic-row:before,.epic-row-padding:after,.epic-row-padding:before,
+.epic-cell-row:before,.epic-cell-row:after,.epic-clear:after,.epic-clear:before,.epic-bar:before,.epic-bar:after{content:"";display:table;clear:both}
+.epic-col,.epic-half,.epic-third,.epic-twothird,.epic-threequarter,.epic-quarter{float:left;width:100%}
+.epic-col.s1{width:8.33333%}.epic-col.s2{width:16.66666%}.epic-col.s3{width:24.99999%}.epic-col.s4{width:33.33333%}
+.epic-col.s5{width:41.66666%}.epic-col.s6{width:49.99999%}.epic-col.s7{width:58.33333%}.epic-col.s8{width:66.66666%}
+.epic-col.s9{width:74.99999%}.epic-col.s10{width:83.33333%}.epic-col.s11{width:91.66666%}.epic-col.s12{width:99.99999%}
+@media (min-width:601px){.epic-col.m1{width:8.33333%}.epic-col.m2{width:16.66666%}.epic-col.m3,.epic-quarter{width:24.99999%}.epic-col.m4,.epic-third{width:33.33333%}
+.epic-col.m5{width:41.66666%}.epic-col.m6,.epic-half{width:49.99999%}.epic-col.m7{width:58.33333%}.epic-col.m8,.epic-twothird{width:66.66666%}
+.epic-col.m9,.epic-threequarter{width:74.99999%}.epic-col.m10{width:83.33333%}.epic-col.m11{width:91.66666%}.epic-col.m12{width:99.99999%}}
+@media (min-width:993px){.epic-col.l1{width:8.33333%}.epic-col.l2{width:16.66666%}.epic-col.l3{width:24.99999%}.epic-col.l4{width:33.33333%}
+.epic-col.l5{width:41.66666%}.epic-col.l6{width:49.99999%}.epic-col.l7{width:58.33333%}.epic-col.l8{width:66.66666%}
+.epic-col.l9{width:74.99999%}.epic-col.l10{width:83.33333%}.epic-col.l11{width:91.66666%}.epic-col.l12{width:99.99999%}}
+.epic-rest{overflow:hidden}.epic-stretch{margin-left:-16px;margin-right:-16px}
+.epic-content,.epic-auto{margin-left:auto;margin-right:auto}.epic-content{max-width:980px}.epic-auto{max-width:1140px}
+.epic-cell-row{display:table;width:100%}.epic-cell{display:table-cell}
+.epic-cell-top{vertical-align:top}.epic-cell-middle{vertical-align:middle}.epic-cell-bottom{vertical-align:bottom}
+.epic-hide{display:none!important}.epic-show-block,.epic-show{display:block!important}.epic-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.epic-auto{max-width:95%}}
+@media (max-width:600px){.epic-modal-content{margin:0 10px;width:auto!important}.epic-modal{padding-top:30px}
+.epic-dropdown-hover.epic-mobile .epic-dropdown-content,.epic-dropdown-click.epic-mobile .epic-dropdown-content{position:relative}	
+.epic-hide-small{display:none!important}.epic-mobile{display:block;width:100%!important}.epic-bar-item.epic-mobile,.epic-dropdown-hover.epic-mobile,.epic-dropdown-click.epic-mobile{text-align:center}
+.epic-dropdown-hover.epic-mobile,.epic-dropdown-hover.epic-mobile .epic-btn,.epic-dropdown-hover.epic-mobile .epic-button,.epic-dropdown-click.epic-mobile,.epic-dropdown-click.epic-mobile .epic-btn,.epic-dropdown-click.epic-mobile .epic-button{width:100%}}
+@media (max-width:768px){.epic-modal-content{width:500px}.epic-modal{padding-top:50px}}
+@media (min-width:993px){.epic-modal-content{width:900px}.epic-hide-large{display:none!important}.epic-sidebar.epic-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.epic-hide-medium{display:none!important}}
+@media (max-width:992px){.epic-sidebar.epic-collapse{display:none}.epic-main{margin-left:0!important;margin-right:0!important}.epic-auto{max-width:100%}}
+.epic-top,.epic-bottom{position:fixed;width:100%;z-index:1}.epic-top{top:0}.epic-bottom{bottom:0}
+.epic-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.epic-display-topleft{position:absolute;left:0;top:0}.epic-display-topright{position:absolute;right:0;top:0}
+.epic-display-bottomleft{position:absolute;left:0;bottom:0}.epic-display-bottomright{position:absolute;right:0;bottom:0}
+.epic-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.epic-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.epic-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.epic-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.epic-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.epic-display-container:hover .epic-display-hover{display:block}.epic-display-container:hover span.epic-display-hover{display:inline-block}.epic-display-hover{display:none}
+.epic-display-position{position:absolute}
+.epic-circle{border-radius:50%}
+.epic-round-small{border-radius:2px}.epic-round,.epic-round-medium{border-radius:4px}.epic-round-large{border-radius:8px}.epic-round-xlarge{border-radius:16px}.epic-round-xxlarge{border-radius:32px}
+.epic-row-padding,.epic-row-padding>.epic-half,.epic-row-padding>.epic-third,.epic-row-padding>.epic-twothird,.epic-row-padding>.epic-threequarter,.epic-row-padding>.epic-quarter,.epic-row-padding>.epic-col{padding:0 8px}
+.epic-container,.epic-panel{padding:0.01em 16px}.epic-panel{margin-top:16px;margin-bottom:16px}
+.epic-code,.epic-codespan{font-family:Consolas,"courier new";font-size:16px}
+.epic-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.epic-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.epic-card,.epic-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.epic-card-4,.epic-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.epic-spin{animation:epic-spin 2s infinite linear}@keyframes epic-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.epic-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.epic-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.epic-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.epic-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.epic-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.epic-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.epic-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.epic-animate-input{transition:width 0.4s ease-in-out}.epic-animate-input:focus{width:100%!important}
+.epic-opacity,.epic-hover-opacity:hover{opacity:0.60}.epic-opacity-off,.epic-hover-opacity-off:hover{opacity:1}
+.epic-opacity-max{opacity:0.25}.epic-opacity-min{opacity:0.75}
+.epic-greyscale-max,.epic-grayscale-max,.epic-hover-greyscale:hover,.epic-hover-grayscale:hover{filter:grayscale(100%)}
+.epic-greyscale,.epic-grayscale{filter:grayscale(75%)}.epic-greyscale-min,.epic-grayscale-min{filter:grayscale(50%)}
+.epic-sepia{filter:sepia(75%)}.epic-sepia-max,.epic-hover-sepia:hover{filter:sepia(100%)}.epic-sepia-min{filter:sepia(50%)}
+.epic-tiny{font-size:10px!important}.epic-small{font-size:12px!important}.epic-medium{font-size:15px!important}.epic-large{font-size:18px!important}
+.epic-xlarge{font-size:24px!important}.epic-xxlarge{font-size:36px!important}.epic-xxxlarge{font-size:48px!important}.epic-jumbo{font-size:64px!important}
+.epic-left-align{text-align:left!important}.epic-right-align{text-align:right!important}.epic-justify{text-align:justify!important}.epic-center{text-align:center!important}
+.epic-border-0{border:0!important}.epic-border{border:1px solid #ccc!important}
+.epic-border-top{border-top:1px solid #ccc!important}.epic-border-bottom{border-bottom:1px solid #ccc!important}
+.epic-border-left{border-left:1px solid #ccc!important}.epic-border-right{border-right:1px solid #ccc!important}
+.epic-topbar{border-top:6px solid #ccc!important}.epic-bottombar{border-bottom:6px solid #ccc!important}
+.epic-leftbar{border-left:6px solid #ccc!important}.epic-rightbar{border-right:6px solid #ccc!important}
+.epic-section,.epic-code{margin-top:16px!important;margin-bottom:16px!important}
+.epic-margin{margin:16px!important}.epic-margin-top{margin-top:16px!important}.epic-margin-bottom{margin-bottom:16px!important}
+.epic-margin-left{margin-left:16px!important}.epic-margin-right{margin-right:16px!important}
+.epic-padding-small{padding:4px 8px!important}.epic-padding{padding:8px 16px!important}.epic-padding-large{padding:12px 24px!important}
+.epic-padding-16{padding-top:16px!important;padding-bottom:16px!important}.epic-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.epic-padding-32{padding-top:32px!important;padding-bottom:32px!important}.epic-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.epic-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.epic-padding-top-64{padding-top:64px!important}.epic-padding-top-48{padding-top:48px!important}
+.epic-padding-top-32{padding-top:32px!important}.epic-padding-top-24{padding-top:24px!important}
+.epic-left{float:left!important}.epic-right{float:right!important}
+.epic-button:hover{color:#000!important;background-color:#ccc!important}
+.epic-transparent,.epic-hover-none:hover{background-color:transparent!important}
+.epic-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.epic-amber,.epic-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.epic-aqua,.epic-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.epic-blue,.epic-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.epic-light-blue,.epic-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.epic-brown,.epic-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.epic-cyan,.epic-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.epic-blue-grey,.epic-hover-blue-grey:hover,.epic-blue-gray,.epic-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.epic-green,.epic-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.epic-light-green,.epic-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.epic-indigo,.epic-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.epic-khaki,.epic-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.epic-lime,.epic-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.epic-orange,.epic-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.epic-deep-orange,.epic-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.epic-pink,.epic-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.epic-purple,.epic-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.epic-deep-purple,.epic-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.epic-red,.epic-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.epic-sand,.epic-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.epic-teal,.epic-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.epic-yellow,.epic-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.epic-white,.epic-hover-white:hover{color:#000!important;background-color:#fff!important}
+.epic-black,.epic-hover-black:hover{color:#fff!important;background-color:#000!important}
+.epic-grey,.epic-hover-grey:hover,.epic-gray,.epic-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.epic-light-grey,.epic-hover-light-grey:hover,.epic-light-gray,.epic-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.epic-dark-grey,.epic-hover-dark-grey:hover,.epic-dark-gray,.epic-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.epic-pale-red,.epic-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.epic-pale-green,.epic-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.epic-pale-yellow,.epic-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.epic-pale-blue,.epic-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.epic-text-amber,.epic-hover-text-amber:hover{color:#ffc107!important}
+.epic-text-aqua,.epic-hover-text-aqua:hover{color:#00ffff!important}
+.epic-text-blue,.epic-hover-text-blue:hover{color:#2196F3!important}
+.epic-text-light-blue,.epic-hover-text-light-blue:hover{color:#87CEEB!important}
+.epic-text-brown,.epic-hover-text-brown:hover{color:#795548!important}
+.epic-text-cyan,.epic-hover-text-cyan:hover{color:#00bcd4!important}
+.epic-text-blue-grey,.epic-hover-text-blue-grey:hover,.epic-text-blue-gray,.epic-hover-text-blue-gray:hover{color:#607d8b!important}
+.epic-text-green,.epic-hover-text-green:hover{color:#4CAF50!important}
+.epic-text-light-green,.epic-hover-text-light-green:hover{color:#8bc34a!important}
+.epic-text-indigo,.epic-hover-text-indigo:hover{color:#3f51b5!important}
+.epic-text-khaki,.epic-hover-text-khaki:hover{color:#b4aa50!important}
+.epic-text-lime,.epic-hover-text-lime:hover{color:#cddc39!important}
+.epic-text-orange,.epic-hover-text-orange:hover{color:#ff9800!important}
+.epic-text-deep-orange,.epic-hover-text-deep-orange:hover{color:#ff5722!important}
+.epic-text-pink,.epic-hover-text-pink:hover{color:#e91e63!important}
+.epic-text-purple,.epic-hover-text-purple:hover{color:#9c27b0!important}
+.epic-text-deep-purple,.epic-hover-text-deep-purple:hover{color:#673ab7!important}
+.epic-text-red,.epic-hover-text-red:hover{color:#f44336!important}
+.epic-text-sand,.epic-hover-text-sand:hover{color:#fdf5e6!important}
+.epic-text-teal,.epic-hover-text-teal:hover{color:#009688!important}
+.epic-text-yellow,.epic-hover-text-yellow:hover{color:#d2be0e!important}
+.epic-text-white,.epic-hover-text-white:hover{color:#fff!important}
+.epic-text-black,.epic-hover-text-black:hover{color:#000!important}
+.epic-text-grey,.epic-hover-text-grey:hover,.epic-text-gray,.epic-hover-text-gray:hover{color:#757575!important}
+.epic-text-light-grey,.epic-hover-text-light-grey:hover,.epic-text-light-gray,.epic-hover-text-light-gray:hover{color:#f1f1f1!important}
+.epic-text-dark-grey,.epic-hover-text-dark-grey:hover,.epic-text-dark-gray,.epic-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.epic-border-amber,.epic-hover-border-amber:hover{border-color:#ffc107!important}
+.epic-border-aqua,.epic-hover-border-aqua:hover{border-color:#00ffff!important}
+.epic-border-blue,.epic-hover-border-blue:hover{border-color:#2196F3!important}
+.epic-border-light-blue,.epic-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.epic-border-brown,.epic-hover-border-brown:hover{border-color:#795548!important}
+.epic-border-cyan,.epic-hover-border-cyan:hover{border-color:#00bcd4!important}
+.epic-border-blue-grey,.epic-hover-border-blue-grey:hover,.epic-border-blue-gray,.epic-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.epic-border-green,.epic-hover-border-green:hover{border-color:#4CAF50!important}
+.epic-border-light-green,.epic-hover-border-light-green:hover{border-color:#8bc34a!important}
+.epic-border-indigo,.epic-hover-border-indigo:hover{border-color:#3f51b5!important}
+.epic-border-khaki,.epic-hover-border-khaki:hover{border-color:#f0e68c!important}
+.epic-border-lime,.epic-hover-border-lime:hover{border-color:#cddc39!important}
+.epic-border-orange,.epic-hover-border-orange:hover{border-color:#ff9800!important}
+.epic-border-deep-orange,.epic-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.epic-border-pink,.epic-hover-border-pink:hover{border-color:#e91e63!important}
+.epic-border-purple,.epic-hover-border-purple:hover{border-color:#9c27b0!important}
+.epic-border-deep-purple,.epic-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.epic-border-red,.epic-hover-border-red:hover{border-color:#f44336!important}
+.epic-border-sand,.epic-hover-border-sand:hover{border-color:#fdf5e6!important}
+.epic-border-teal,.epic-hover-border-teal:hover{border-color:#009688!important}
+.epic-border-yellow,.epic-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.epic-border-white,.epic-hover-border-white:hover{border-color:#fff!important}
+.epic-border-black,.epic-hover-border-black:hover{border-color:#000!important}
+.epic-border-grey,.epic-hover-border-grey:hover,.epic-border-gray,.epic-hover-border-gray:hover{border-color:#9e9e9e!important}
+.epic-border-light-grey,.epic-hover-border-light-grey:hover,.epic-border-light-gray,.epic-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.epic-border-dark-grey,.epic-hover-border-dark-grey:hover,.epic-border-dark-gray,.epic-hover-border-dark-gray:hover{border-color:#616161!important}
+.epic-border-pale-red,.epic-hover-border-pale-red:hover{border-color:#ffe7e7!important}.epic-border-pale-green,.epic-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.epic-border-pale-yellow,.epic-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.epic-border-pale-blue,.epic-hover-border-pale-blue:hover{border-color:#e7ffff!important}
